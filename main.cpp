@@ -237,19 +237,8 @@ void opcontrol()
 	{
 		rightx = master.get_analog(ANALOG_LEFT_X);
 		righty = master.get_analog(ANALOG_LEFT_Y);
-		// lefty = master.get_analog(ANALOG_RIGHT_Y)-deadzone;
 
-		// pros::lcd::print(0, "%d %d %d", (pros::lcd::read_buttons() & LCD_BTN_LEFT) >> 2,
-		//                  (pros::lcd::read_buttons() & LCD_BTN_CENTER) >> 1,
-		//                  (pros::lcd::read_buttons() & LCD_BTN_RIGHT) >> 0); // debug functions
-		double lefty = master.get_analog(ANALOG_RIGHT_Y);
-		// if (lefty <= -3 || lefty >= 3) {
-		// 	flywheel = -lefty;
-		// 	flywheel1 = lefty;
-		// 	master.print(1, 0, "Flw speed: %f                ", static_cast<float>(-lefty));
-		// 	double a=flywheel1.get_actual_velocity();
-		// 	master.print(2, 0, "%f", a);
-		// }
+	
 		if (master.get_digital(DIGITAL_LEFT))
 		{
 			pressed = true;
