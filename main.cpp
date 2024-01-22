@@ -231,7 +231,7 @@ void opcontrol()
 	elevate2.set_brake_mode(pros::E_MOTOR_BRAKE_HOLD);
 	flywheel.set_brake_mode(pros::E_MOTOR_BRAKE_COAST); // lower chance of motor burning out with coasting flywheel
 	flywheel1.set_brake_mode(pros::E_MOTOR_BRAKE_COAST);
-	double deadzone = master.get_analog(ANALOG_LEFT_Y); // deadzone for left joystick
+	
 
 	while (true)
 	{
